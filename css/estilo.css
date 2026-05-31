@@ -6,8 +6,6 @@ body {
     font-family: 'Quicksand', sans-serif;
     padding: 0px;
     margin: 0px;
-    background: #0a0e1a;
-    color: #e0e6f0;
     text-align: justify;
 }
 
@@ -22,11 +20,7 @@ section {
     overflow: auto;
 }
 
-section.fundo {
-    background-color: #111827;
-}
-
-#chales ul, #quarto ul{
+#chales ul, #quarto ul {
     padding: 0px;
 }
 
@@ -36,74 +30,68 @@ img {
 }
 
 h2 {
-    color: #ffffff;
-    letter-spacing: 2px;
-}
-
-h3 {
-    color: #e0e6f0;
+    letter-spacing: 3px;
 }
 
 p {
-    color: #b0bcd4;
     line-height: 1.8;
 }
 
 p.destaque {
-    color: #38bdf8;
     font-weight: bold;
     font-size: 20px;
 }
 
-.p0{
+.p0 {
     padding: 0px !important;
 }
 
-.desabilitado{
+.desabilitado {
     text-decoration: line-through;
-    color: #555e75;
 }
 
 /* Cabeçalho */
 .cabecalho {
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #0a0e1a 0%, #0f1e3d 50%, #0a1628 100%);
-    background-color: #111827;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     color: #fff;
-    border-bottom: 2px solid #1e3a5f;
+    position: relative;
+    overflow: hidden;
+}
+
+.cabecalho::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
 }
 
 .cabecalho h1 {
-    font-size: 50px;
+    font-size: 54px;
     color: #ffffff;
-    text-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+    letter-spacing: 6px;
     margin: 10px 0 5px;
+    position: relative;
 }
 
 .cabecalho p {
-    font-size: 20px;
-    color: #0932e6;     
-    letter-spacing: 3px;
+    font-size: 16px;
+    letter-spacing: 5px;
     text-transform: uppercase;
+    position: relative;
 }
 
 /* Barra de navegação */
 .topo {
     padding: 5px 0px;
     overflow: hidden;
-    background-color: #0d1b2e;
-    border-bottom: 2px solid #38bdf8;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-.topo ul{
+.topo ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -116,127 +104,96 @@ p.destaque {
 
 .topo ul li a {
     display: block;
-    color: #b0bcd4;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     border-radius: 4px;
     transition: all 0.2s ease;
-}
-
-.topo ul li a:hover {
-    background-color: rgba(56, 189, 248, 0.15);
-    color: #38bdf8;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .topo ul li.destaque {
-    background-color: #1d6fa4;
     border-radius: 4px;
-}
-
-.topo ul li.destaque a {
-    color: #fff;
-}
-
-.topo ul li.destaque a:hover {
-    background-color: #38bdf8;
-    color: #0a0e1a;
 }
 
 .topo ul li.right {
     float: right;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
 /* Tabela de preços */
 .tabela-preco {
     list-style-type: none;
-    border: 1px solid #1e3a5f;
     margin: 0;
     padding: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    background-color: #111827;
     border-radius: 8px;
     overflow: hidden;
 }
 
-.tabela-preco:hover {
-    box-shadow: 0 8px 24px rgba(56, 189, 248, 0.15);
-    border-color: #38bdf8;
-}
-
 .tabela-preco li {
-    border-bottom: 1px solid #1e3a5f;
     padding: 20px;
     text-align: center;
-    color: #b0bcd4;
 }
 
 .tabela-preco .titulo {
     font-size: 20px;
     font-weight: bold;
-    background: linear-gradient(135deg, #0d1b2e, #1e3a5f);
-    color: #38bdf8;
     letter-spacing: 1px;
 }
 
 .tabela-preco .cinza {
-    background-color: #0d1b2e;
     font-size: 20px;
-    color: #ffffff;
     font-weight: bold;
 }
 
 /* Formulário */
-input[type=text], input[type=date], input[type=email],
-select {
+input[type=text], input[type=date], input[type=email], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #1e3a5f;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: #111827;
-    color: #e0e6f0;
 }
 
 input[type=submit] {
     width: 100%;
-    background-color: #1d6fa4;
-    color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: 700;
     transition: background 0.2s;
 }
 
-input[type=submit]:hover {
-    background-color: #38bdf8;
-    color: #0a0e1a;
-}
-
-label{
+label {
     display: block;
     padding-top: 1em;
-    color: #b0bcd4;
 }
 
-/* Link quando passa o mouse*/
+/* Hover nos links */
+.hover a {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 6px 4px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
 .hover a:hover {
-  border-color: rgb(95, 24, 121);       /* Muda a cor */
-  border-style: solid;    /* Muda o estilo (ex: de sólida para tracejada) */
-  border-width: 3px;       /* Opcional: muda a espessura */
-  cursor: pointer;         /* Opcional: muda o cursor */
+    cursor: pointer;
 }
 
-/* Colunas pro desktop */
+/* Colunas desktop */
 .row::after {
     content: "";
     clear: both;
@@ -248,7 +205,7 @@ label{
     padding: 15px;
 }
 
-/* Alinhamento dos cards de personagens */
+/* Cards de personagens */
 #Personagens .row {
     display: flex;
     flex-wrap: wrap;
@@ -267,51 +224,90 @@ label{
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 8px;
-    border: 2px solid #1e3a5f;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
 #Personagens .col-6 img:hover {
-    border-color: #38bdf8;
-    box-shadow: 0 0 16px rgba(56, 189, 248, 0.3);
+    transform: translateY(-4px);
 }
 
 #Personagens .col-6 h3 {
     margin-top: 10px;
-    color: #e0e6f0;
+    letter-spacing: 1px;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1  { width: 8.33%; }
+.col-2  { width: 16.66%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.33%; }
+.col-5  { width: 41.66%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.33%; }
+.col-8  { width: 66.66%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
 
-/* Configuração para celulares */
+/* Cards de fatos */
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.fact-card p {
+    text-align: left;
+}
+
+.fact-card {
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.fact-card:hover {
+    transform: translateY(-2px);
+}
+
+.fact-num {
+    font-size: 22px;
+    font-weight: bold;
+    min-width: 28px;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+/* Mobile */
 @media only screen and (max-width: 768px) {
     [class*="col-"] {
         width: 100%;
     }
-    .container{
+    .container {
         padding: 15px;
     }
-
-    /* Mantém 2 colunas para os cards de personagens no mobile */
+    .cabecalho h1 {
+        font-size: 36px;
+    }
     #Personagens .col-6 {
         width: 50%;
         padding: 8px;
     }
-
     #Personagens .col-6 img {
         width: 100%;
         height: 150px;
+    }
+    .facts-grid {
+        grid-template-columns: 1fr;
     }
 }

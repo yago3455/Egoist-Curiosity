@@ -1,0 +1,156 @@
+/* ===== TEMA BACHIRA — laranja + azul escuro ===== */
+
+body {
+    background: #0d1033;
+    color: #f0f4ff;
+}
+
+h2 {
+    color: #ffd60a;
+    text-shadow: 0 0 18px rgba(255, 214, 10, 0.45);
+}
+
+h3 { color: #f0f4ff; }
+
+p { color: #c8d0f0; }
+
+p.destaque {
+    color: #39ff14;
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
+}
+
+.desabilitado { color: #555e75; }
+
+section.fundo {
+    background-color: #14193f;
+    border-top: 2px solid #ff7b00;
+    border-bottom: 2px solid #ff7b00;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background: linear-gradient(160deg, #0a0d2e 0%, #1a1f6e 55%, #0f1240 100%);
+    border-bottom: 3px solid #ff7b00;
+}
+
+.cabecalho::before {
+    background: repeating-linear-gradient(
+        -55deg,
+        transparent, transparent 28px,
+        rgba(255, 123, 0, 0.06) 28px,
+        rgba(255, 123, 0, 0.06) 30px
+    );
+}
+
+.cabecalho h1 {
+    text-shadow:
+        0 0 12px rgba(255, 214, 10, 0.7),
+        0 0 30px rgba(255, 123, 0, 0.4);
+}
+
+.cabecalho p { color: #ff7b00; }
+
+/* Navbar */
+.topo {
+    background-color: #1a1f6e;
+    border-bottom: 3px solid #ff7b00;
+}
+
+.topo ul li a { color: #c8d0f0; }
+
+.topo ul li a:hover {
+    background-color: rgba(255, 123, 0, 0.2);
+    color: #ffd60a;
+}
+
+.topo ul li.destaque { background-color: #ff7b00; }
+
+.topo ul li.destaque a { color: #0a0d2e; }
+
+.topo ul li.destaque a:hover {
+    background-color: #ffd60a;
+    color: #0a0d2e;
+}
+
+/* Personagens */
+#Personagens .col-6 img { border-color: #2d3561; }
+
+#Personagens .col-6 img:hover {
+    border-color: #ff7b00;
+    box-shadow: 0 0 20px rgba(255, 123, 0, 0.45);
+}
+
+#Personagens .col-6 h3 { color: #ffd60a; }
+
+#Personagens .col-12 p { color: #c8d0f0; }
+
+/* Hover links */
+.hover a {
+    color: #f0f4ff !important;
+    border: 2px solid rgba(67, 97, 238, 0.4);
+}
+
+.hover a:hover {
+    border-color: #ff7b00;
+    color: #ffd60a !important;
+    background-color: rgba(255, 123, 0, 0.15);
+}
+
+/* Fact cards */
+.fact-card {
+    background: #0d1033;
+    border: 1px solid rgba(255, 123, 0, 0.25);
+    border-left-color: #ff7b00;
+}
+
+.fact-card:hover {
+    border-color: #ffd60a;
+    border-left-color: #ffd60a;
+}
+
+.fact-num { color: #ff7b00; }
+
+/* Formulário */
+input[type=text], input[type=date], input[type=email], select {
+    border: 1px solid #2d3561;
+    background-color: #14193f;
+    color: #f0f4ff;
+}
+
+input[type=submit] {
+    background-color: #ff7b00;
+    color: #0a0d2e;
+}
+
+input[type=submit]:hover {
+    background-color: #ffd60a;
+    color: #0a0d2e;
+}
+
+label { color: #c8d0f0; }
+
+/* Tabela preço */
+.tabela-preco {
+    border: 1px solid #2d3561;
+    background-color: #111827;
+}
+
+.tabela-preco:hover {
+    box-shadow: 0 8px 24px rgba(255, 123, 0, 0.2);
+    border-color: #ff7b00;
+}
+
+.tabela-preco li {
+    border-bottom: 1px solid #2d3561;
+    color: #c8d0f0;
+}
+
+.tabela-preco .titulo {
+    background: linear-gradient(135deg, #1a1f6e, #2d3561);
+    color: #ffd60a;
+}
+
+.tabela-preco .cinza {
+    background-color: #0d1033;
+    color: #ffffff;
+}
