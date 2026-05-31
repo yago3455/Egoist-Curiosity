@@ -1,0 +1,113 @@
+/* ===== TEMA INDEX — azul escuro ===== */
+
+body {
+    background: #0a0e1a;
+    color: #e0e6f0;
+}
+
+h2 {
+    color: #ffffff;
+    text-shadow: none;
+}
+
+h3 { color: #e0e6f0; }
+
+p { color: #b0bcd4; }
+
+p.destaque {
+    color: #38bdf8;
+    text-shadow: none;
+}
+
+.desabilitado { color: #555e75; }
+
+section.fundo { background-color: #111827; }
+
+/* Cabeçalho */
+.cabecalho {
+    background: linear-gradient(135deg, #0a0e1a 0%, #0f1e3d 50%, #0a1628 100%);
+    border-bottom: 2px solid #1e3a5f;
+}
+
+.cabecalho h1 {
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+}
+
+.cabecalho p { color: #0932e6; }
+
+/* Navbar */
+.topo {
+    background-color: #0d1b2e;
+    border-bottom: 2px solid #38bdf8;
+}
+
+.topo ul li a { color: #b0bcd4; }
+
+.topo ul li a:hover {
+    background-color: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+}
+
+.topo ul li.destaque { background-color: #1d6fa4; }
+
+.topo ul li.destaque a { color: #fff; }
+
+.topo ul li.destaque a:hover {
+    background-color: #38bdf8;
+    color: #0a0e1a;
+}
+
+/* Personagens */
+#Personagens .col-6 img { border-color: #1e3a5f; }
+
+#Personagens .col-6 img:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 0 16px rgba(56, 189, 248, 0.3);
+}
+
+#Personagens .col-6 h3 { color: #e0e6f0; }
+
+/* Hover links */
+.hover a {
+    color: #ffffff !important;
+    border: 2px solid rgba(56, 189, 248, 0.4);
+}
+
+.hover a:hover {
+    border-color: #38bdf8;
+    color: #38bdf8 !important;
+    background-color: rgba(56, 189, 248, 0.15);
+}
+
+/* Fact cards */
+.fact-card {
+    background: #0d1b2e;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-left-color: #38bdf8;
+}
+
+.fact-card:hover {
+    border-color: #38bdf8;
+    border-left-color: #38bdf8;
+}
+
+.fact-num { color: #38bdf8; }
+
+/* Formulário */
+input[type=text], input[type=date], input[type=email], select {
+    border: 1px solid #1e3a5f;
+    background-color: #111827;
+    color: #e0e6f0;
+}
+
+input[type=submit] {
+    background-color: #1d6fa4;
+    color: #ffffff;
+}
+
+input[type=submit]:hover {
+    background-color: #38bdf8;
+    color: #0a0e1a;
+}
+
+label { color: #b0bcd4; }
