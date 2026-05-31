@@ -1,0 +1,156 @@
+/* ===== TEMA SAE — rosa + azul marinho ===== */
+
+body {
+    background: #0a0d1f;
+    color: #f0e8f4;
+}
+
+h2 {
+    color: #f472a8;
+    text-shadow: 0 0 18px rgba(244, 114, 168, 0.45);
+}
+
+h3 { color: #f0e8f4; }
+
+p { color: #d0c4dc; }
+
+p.destaque {
+    color: #f472a8;
+    text-shadow: 0 0 8px rgba(244, 114, 168, 0.4);
+}
+
+.desabilitado { color: #4a3a52; }
+
+section.fundo {
+    background-color: #0f1230;
+    border-top: 2px solid #e0567a;
+    border-bottom: 2px solid #e0567a;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background: linear-gradient(160deg, #060818 0%, #1a0d2e 55%, #0d0a22 100%);
+    border-bottom: 3px solid #e0567a;
+}
+
+.cabecalho::before {
+    background: repeating-linear-gradient(
+        -55deg,
+        transparent, transparent 28px,
+        rgba(224, 86, 122, 0.06) 28px,
+        rgba(224, 86, 122, 0.06) 30px
+    );
+}
+
+.cabecalho h1 {
+    text-shadow:
+        0 0 12px rgba(244, 114, 168, 0.7),
+        0 0 30px rgba(224, 86, 122, 0.4);
+}
+
+.cabecalho p { color: #e0567a; }
+
+/* Navbar */
+.topo {
+    background-color: #12082a;
+    border-bottom: 3px solid #e0567a;
+}
+
+.topo ul li a { color: #d0c4dc; }
+
+.topo ul li a:hover {
+    background-color: rgba(224, 86, 122, 0.2);
+    color: #f472a8;
+}
+
+.topo ul li.destaque { background-color: #e0567a; }
+
+.topo ul li.destaque a { color: #0a0d1f; }
+
+.topo ul li.destaque a:hover {
+    background-color: #f472a8;
+    color: #0a0d1f;
+}
+
+/* Personagens */
+#Personagens .col-6 img { border-color: #2a1a3a; }
+
+#Personagens .col-6 img:hover {
+    border-color: #e0567a;
+    box-shadow: 0 0 20px rgba(224, 86, 122, 0.45);
+}
+
+#Personagens .col-6 h3 { color: #f472a8; }
+
+#Personagens .col-12 p { color: #d0c4dc; }
+
+/* Hover links */
+.hover a {
+    color: #f0e8f4 !important;
+    border: 2px solid rgba(224, 86, 122, 0.4);
+}
+
+.hover a:hover {
+    border-color: #f472a8;
+    color: #f472a8 !important;
+    background-color: rgba(224, 86, 122, 0.15);
+}
+
+/* Fact cards */
+.fact-card {
+    background: #0a0d1f;
+    border: 1px solid rgba(224, 86, 122, 0.25);
+    border-left-color: #e0567a;
+}
+
+.fact-card:hover {
+    border-color: #f472a8;
+    border-left-color: #f472a8;
+}
+
+.fact-num { color: #e0567a; }
+
+/* Formulário */
+input[type=text], input[type=date], input[type=email], select {
+    border: 1px solid #2a1a3a;
+    background-color: #0f1230;
+    color: #f0e8f4;
+}
+
+input[type=submit] {
+    background-color: #e0567a;
+    color: #0a0d1f;
+}
+
+input[type=submit]:hover {
+    background-color: #f472a8;
+    color: #0a0d1f;
+}
+
+label { color: #d0c4dc; }
+
+/* Tabela preço */
+.tabela-preco {
+    border: 1px solid #2a1a3a;
+    background-color: #0f1230;
+}
+
+.tabela-preco:hover {
+    box-shadow: 0 8px 24px rgba(224, 86, 122, 0.2);
+    border-color: #e0567a;
+}
+
+.tabela-preco li {
+    border-bottom: 1px solid #2a1a3a;
+    color: #d0c4dc;
+}
+
+.tabela-preco .titulo {
+    background: linear-gradient(135deg, #1a0d2e, #2a1a3a);
+    color: #f472a8;
+}
+
+.tabela-preco .cinza {
+    background-color: #0a0d1f;
+    color: #ffffff;
+}
